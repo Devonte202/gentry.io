@@ -1,9 +1,74 @@
 #map {
+  margin-right: 100px;
   height: 500px;
-  width: 100%;
+  width: 60%;
   background-color: grey;
 }
 
 .text {
   text-align: center;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.navbar ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0 120px 10px 0;
+}
+
+.gradient-scale {
+  height: 20px;
+  width: 200px;
+  margin: 0 0 0 20px;
+  border-radius: 100px;
+  transform: rotate(-90deg);
+  background: rgb(121, 255, 44);
+  background: linear-gradient(90deg, rgba(121, 255, 44, 1) 0%, rgba(240, 239, 36, 1) 50%, rgba(249, 0, 0, 1) 100%);
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gradient-desc ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.gradient-desc ul li {
+  margin: 65px 0;
+}
+
+.gradient-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: -70px;
+}
+
+.dropdown {
+  margin-left: 100px;
+  margin-top: -70px;
+}
+
+.field {
+  width: 100px;
 }
