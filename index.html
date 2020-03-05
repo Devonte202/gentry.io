@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device - width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style/style.css" type="text/css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+  <title>Gentry.io</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#"><span>Home</span></a></li>
+      <li><a href="#"><span>Map</span></a></li>
+      <li><a href="#"><span>Methodology</span></a></li>
+      <li><a href="#"><span>Sources</span></a></li>
+    </ul>
+  </nav>
+
+  <h1 class="title">Gentrification Map</h1>
+
+  <div class="map-container">
+    <div class="gradient-scale"></div>
+    <div class="gradient-desc">
+      <ul>
+        <li>Gentrified</li>
+        <li>Somewhat Gentrified / In Process</li>
+        <li>Little / No Gentrification</li>
+      </ul>
+    </div>
+    <div id="map" class="container"></div>
+  </div>
+
+  <div class="dropdown">
+    <form method="post" id="year-selection">
+      <fieldset class="field">
+        <label for="year1">Year One</label>
+        <select id="year1">
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+        </select>
+      </fieldset>
+    </form>
+    <form method="post" id="year-comparison">
+      <fieldset class="field">
+        <label for="year2">Year Two</label>
+        <select id="year2">
+            <option value="2018">2018</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+        </select>
+        <input type="button" id="button">
+      </fieldset>
+    </form>
+  </div>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf2F6HwFEz-vlanaPMQyBKcrMhepZ2IPY&libraries=visualization&callback=initMap"></script>
+  <script src="./src/app.js"></script>
+  </script>
+</body>
+
+</html>
