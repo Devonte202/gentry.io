@@ -144,7 +144,7 @@ function initMap() {
       for (let i = 0; i < coords.length; i += 1) {
         coords[i].weight = data[i].weight
       }
-    })
+    }).catch(error => console.warn(error))
     updateMap()
   })
 }
