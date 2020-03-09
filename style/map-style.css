@@ -1,95 +1,152 @@
-/*@media screen and (max-width: 375px),*/
-
-/*(max-height: 812px) {*/
-
-#map {
-  margin-right: 100px;
-  height: 500px;
-  width: 60%;
-  background-color: grey;
-}
-
-.text {
-  text-align: center;
-}
-
-.navbar {
-  margin-top: 20px;
-}
-
 .navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
-}
-
-.navbar ul li {
-  font-size: 20px;
-  font-weight: bold;
+  margin-top: 5%;
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  margin: 0 100px 10px 0;
-}
-
-.gradient-scale {
-  height: 20px;
-  width: 200px;
-  margin: 0 0 0 20px;
-  border-radius: 100px;
-  transform: rotate(-90deg);
-  background: rgb(121, 255, 44);
-  background: linear-gradient(90deg, rgba(121, 255, 44, 1) 0%, rgba(240, 239, 36, 1) 50%, rgba(249, 0, 0, 1) 100%);
+  text-align: center;
+  margin: 0 10%;
 }
 
 .map-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gradient-scale {
+  height: 20px;
+  width: 90%;
+  margin: 10% 0 0 5%;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  background: rgb(121, 255, 44);
+  background: linear-gradient(90deg, rgba(121, 255, 44, 1) 0%, rgba(240, 239, 36, 1) 50%, rgba(249, 0, 0, 1) 100%);
 }
 
 .gradient-desc ul {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
-  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 .gradient-desc ul li {
-  margin: 65px 0;
+  margin-left: 5%;
 }
 
-.gradient-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: -70px;
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 .dropdown {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 100px;
-  margin-top: -70px;
+  justify-content: center;
+  align-items: space-around;
+  margin-top: 5%;
 }
 
 .field {
   width: 100px;
 }
 
-#year-comparison {
-  margin-left: 50px;
-}
-
 #button {
-  margin-left: -90px;
+  margin-left: -50%;
 }
 
-/*}*/
+@media screen and (min-width: 376px),
+(min-height: 813px) {
+  #map {
+    margin-right: 100px;
+    height: 500px;
+    width: 60%;
+    background-color: grey;
+  }
 
-.title {
-  display: flex;
-  justify-content: flex-end;
+  .text {
+    text-align: center;
+  }
+
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .navbar ul li {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1% 57%;
+  }
+
+  .gradient-scale {
+    height: 20px;
+    width: 200px;
+    margin: 0 0 0 20px;
+    border-radius: 100px;
+    transform: rotate(-90deg);
+    background: rgb(121, 255, 44);
+    background: linear-gradient(90deg, rgba(121, 255, 44, 1) 0%, rgba(240, 239, 36, 1) 50%, rgba(249, 0, 0, 1) 100%);
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .gradient-desc ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .gradient-desc ul li {
+    margin: 15% 0;
+    margin-left: -15%;
+  }
+
+  .gradient-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -70px;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-top: -70px;
+  }
+
+  .field {
+    width: 100px;
+  }
+
+  #year-comparison {
+    margin-left: 50px;
+  }
+
+  #button {
+    margin-left: -90px;
+  }
+
 }
