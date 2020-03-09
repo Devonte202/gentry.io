@@ -1,4 +1,32 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 780px) {
+  .ml3 {
+  font-weight: 950;
+  font-size: 5.5em;
+  text-align: center;
+  color: #a5d;
+  }
+
+  .ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+    text-align: center;
+  }
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+}
+@media screen and (min-width: 100px) {
   .ml3 {
   font-weight: 950;
   font-size: 2.5em;
